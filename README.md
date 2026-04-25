@@ -1,16 +1,47 @@
-Deskripsi Repository
+Tugas Praktikum MySQL – Blok Prosedural
 
-Repository ini berisi implementasi stored procedure MySQL untuk materi struktur kontrol percabangan (IF-THEN-ELSE) pada mata kuliah Pemrograman Basis Data.
+ Identitas Mahasiswa
+- Nama: Thizya Tri Frima  
+- NIM: IK2411057  
+- Kelas: Reguler  
 
-Terdapat 3 studi kasus utama:  Struktur File
-pertemuan-04-percabangan/
+ Deskripsi Tugas
+Project ini berisi implementasi stored procedure MySQL menggunakan struktur kontrol IF untuk:
+1. Menentukan predikat dan status kelulusan mahasiswa  
+2. Menentukan status stok barang  
+3. Menghitung diskon berdasarkan total belanja  
+
+ Struktur File
+project-mysql-procedure
 │
 ├── README.md
-├── kode_sql/
-│   └── kuis_pertemuan4.sql
-└── laporan/
-    └── laporan_analisis.pdf    Jalankan Database MySQL
+└── program.sql
 
-Gunakan XAMPP / phpMyAdmin / MySQL Server.Penentuan predikat dan status kelulusan mahasiswa
-Penentuan status stok barang
-Perhitungan diskon belanja pelanggan
+ Cara Menjalankan Program
+1. Buka MySQL / phpMyAdmin / MySQL Workbench / VS Code  
+2. Jalankan file program.sql  
+3. Gunakan perintah:
+   CALL nama_procedure(parameter);
+
+ Penjelasan Program
+
+ 1. cek_predikat_mahasiswa
+Menentukan predikat dan status kelulusan.
+
+Contoh:
+CALL cek_predikat_mahasiswa(85);
+
+2. cek_status_stok
+Menentukan status stok barang.
+
+Contoh:
+CALL cek_status_stok(3);
+
+3. hitung_diskon
+Menghitung diskon dan total bayar.
+
+Contoh:
+CALL hitung_diskon(750000);
+
+ Kesimpulan
+Program menggunakan IF untuk logika percabangan dan menghasilkan output berdasarkan input.
